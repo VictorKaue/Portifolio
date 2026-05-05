@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Victor Kauê — Desenvolvedor de Software apaixonado por tecnologia, IA e soluções inovadoras." />
+  <meta name="keywords" content="portfólio, desenvolvedor, software, Python, Swift, backend, Victor Kauê" />
+  <meta name="author" content="Victor Kauê" />
+  <title>Victor Kauê | Portfólio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo">VK<span class="dot">.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#formacao" class="nav-link">Formação</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Victor Kauê</h1>
+      <div class="hero-roles">
+        <span class="role-text" id="role-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc">
+        Desenvolvedor apaixonado por criar soluções elegantes e escaláveis, unindo tecnologia e criatividade.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/VictorKaue" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/victorkaue" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:victorkaue@email.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>Role para baixo</span>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MIM ===== -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / Sobre</span>
+        <h2 class="section-title">Sobre Mim</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image-placeholder">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="about-badge">
+            <i class="fas fa-code"></i>
+            <span>Dev Full Stack</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3>Construindo o futuro, uma linha de código por vez.</h3>
+          <p>
+            Sou estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, com experiência prática no desenvolvimento de aplicações web e mobile. Tenho grande interesse em <strong>Inteligência Artificial</strong>, <strong>APIs RESTful</strong> e <strong>arquitetura de software</strong>.
+          </p>
+          <p>
+            Nos meus projetos, costumo trabalhar com o ecossistema <strong>Python (Flask, FastAPI)</strong> no back-end e <strong>Swift</strong> no desenvolvimento iOS, sempre buscando boas práticas e código limpo.
+          </p>
+          <p>
+            Fora do código, sou curioso por natureza — gosto de aprender novas tecnologias, contribuir para projetos open source e compartilhar conhecimento.
+          </p>
+          <div class="skills-wrap">
+            <h4>Principais Tecnologias</h4>
+            <div class="skills-grid">
+              <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+              <div class="skill-item"><i class="fas fa-mobile-alt"></i> Swift</div>
+              <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+              <div class="skill-item"><i class="fas fa-database"></i> PostgreSQL</div>
+              <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+              <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+              <div class="skill-item"><i class="fas fa-server"></i> Flask / FastAPI</div>
+              <div class="skill-item"><i class="fas fa-robot"></i> IA / LLMs</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Baixar CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FORMAÇÃO ===== -->
+  <section id="formacao" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Formação</span>
+        <h2 class="section-title">Formação & Experiência</h2>
+      </div>
+      <div class="timeline-tabs">
+        <button class="tab-btn active" data-tab="educacao" id="tab-educacao">
+          <i class="fas fa-graduation-cap"></i> Educação
+        </button>
+        <button class="tab-btn" data-tab="experiencia" id="tab-experiencia">
+          <i class="fas fa-briefcase"></i> Experiência
+        </button>
+        <button class="tab-btn" data-tab="cursos" id="tab-cursos">
+          <i class="fas fa-certificate"></i> Cursos
+        </button>
+      </div>
+
+      <!-- Educação -->
+      <div class="tab-content active" id="tab-content-educacao">
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2023 – Presente</span>
+              <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+              <h4>Universidade · <span>Graduação</span></h4>
+              <p>Formação técnica e prática em desenvolvimento de sistemas, algoritmos, banco de dados, engenharia de software e computação em nuvem.</p>
+              <div class="timeline-tags">
+                <span>ADS</span><span>Banco de Dados</span><span>Engenharia de Software</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2020 – 2022</span>
+              <h3>Ensino Médio</h3>
+              <h4>Escola · <span>Ensino Médio Completo</span></h4>
+              <p>Conclusão do ensino médio com ênfase em ciências exatas e início da jornada autodidática em programação.</p>
+              <div class="timeline-tags">
+                <span>Exatas</span><span>Lógica</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experiência -->
+      <div class="tab-content" id="tab-content-experiencia">
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2024 – Presente</span>
+              <h3>Desenvolvedor Backend</h3>
+              <h4>Projeto Acadêmico / Pessoal · <span>Flask & PostgreSQL</span></h4>
+              <p>Desenvolvimento de APIs RESTful com Flask, integração de LLMs locais (Ollama) para análise semântica, containerização com Docker Compose e escrita de testes automatizados.</p>
+              <div class="timeline-tags">
+                <span>Python</span><span>Flask</span><span>Docker</span><span>IA</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-period">2023 – 2024</span>
+              <h3>Desenvolvedor iOS</h3>
+              <h4>Projeto Acadêmico · <span>Swift / SwiftUI</span></h4>
+              <p>Construção de aplicativos iOS com Swift e SwiftUI, gerenciamento de projetos Xcode e integração com APIs externas.</p>
+              <div class="timeline-tags">
+                <span>Swift</span><span>SwiftUI</span><span>Xcode</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cursos -->
+      <div class="tab-content" id="tab-content-cursos">
+        <div class="courses-grid">
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fab fa-python"></i></div>
+            <div class="course-info">
+              <h3>Python para Data Science e IA</h3>
+              <p>Coursera / IBM</p>
+              <span class="course-year">2024</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fas fa-database"></i></div>
+            <div class="course-info">
+              <h3>Banco de Dados com PostgreSQL</h3>
+              <p>Udemy</p>
+              <span class="course-year">2024</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fab fa-docker"></i></div>
+            <div class="course-info">
+              <h3>Docker e Containerização</h3>
+              <p>Alura</p>
+              <span class="course-year">2024</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fas fa-robot"></i></div>
+            <div class="course-info">
+              <h3>Fundamentos de Machine Learning</h3>
+              <p>Google / Coursera</p>
+              <span class="course-year">2025</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="course-info">
+              <h3>Desenvolvimento iOS com Swift</h3>
+              <p>Udemy</p>
+              <span class="course-year">2023</span>
+            </div>
+          </div>
+          <div class="course-card reveal">
+            <div class="course-icon"><i class="fab fa-git-alt"></i></div>
+            <div class="course-info">
+              <h3>Git e GitHub Profissional</h3>
+              <p>DIO</p>
+              <span class="course-year">2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFÓLIO ===== -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Portfólio</span>
+        <h2 class="section-title">Projetos</h2>
+      </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+        <button class="filter-btn" data-filter="backend" id="filter-backend">Backend</button>
+        <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile</button>
+        <button class="filter-btn" data-filter="ia" id="filter-ia">IA</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-card reveal" data-category="backend ia">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-calendar-alt"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/VictorKaue" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-backend">Backend</span>
+              <span class="tag tag-ia">IA</span>
+            </div>
+            <h3>Sistema de Gerenciamento de Conferências</h3>
+            <p>API RESTful com Flask e PostgreSQL para gerenciar sessões de conferências, com detecção automática de conflitos via LLMs locais (Ollama) e containerização com Docker.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>PostgreSQL</span><span>Docker</span><span>Ollama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="backend">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-globe"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/VictorKaue" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-backend">Backend</span>
+            </div>
+            <h3>EduCanada — API de Bolsas</h3>
+            <p>API FastAPI com web scraping de universidades canadenses (U of Toronto, OCAD, McGill) para agregar informações sobre bolsas de estudo em tempo real.</p>
+            <div class="project-tech">
+              <span>Python</span><span>FastAPI</span><span>BeautifulSoup</span><span>Scraping</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="mobile">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-plane"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/VictorKaue" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-mobile">Mobile</span>
+            </div>
+            <h3>Projeto Intercâmbio iOS</h3>
+            <p>Aplicativo iOS desenvolvido em Swift para auxiliar estudantes na organização e planejamento de intercâmbios, com integração a APIs externas.</p>
+            <div class="project-tech">
+              <span>Swift</span><span>SwiftUI</span><span>Xcode</span><span>REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ia">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-robot"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/VictorKaue" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-ia">IA</span>
+              <span class="tag tag-backend">Backend</span>
+            </div>
+            <h3>Análise Semântica com LLMs</h3>
+            <p>Serviço de análise semântica utilizando modelos de linguagem locais via Ollama para comparar similaridade entre textos e detectar conflitos temáticos.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Ollama</span><span>NLP</span><span>Flask</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="backend">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-search"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/VictorKaue" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-backend">Backend</span>
+            </div>
+            <h3>Web Scraping API</h3>
+            <p>API de web scraping construída com Python para coletar, tratar e servir dados de múltiplas fontes de forma automatizada e escalável.</p>
+            <div class="project-tech">
+              <span>Python</span><span>FastAPI</span><span>Scraping</span><span>JSON</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="backend mobile">
+          <div class="project-image">
+            <div class="project-placeholder add-project"><i class="fas fa-plus"></i></div>
+            <div class="project-overlay">
+              <a href="https://github.com/VictorKaue" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag tag-backend">Em Breve</span>
+            </div>
+            <h3>Novo Projeto</h3>
+            <p>Sempre trabalhando em algo novo! Confira meu GitHub para ver os projetos mais recentes em desenvolvimento.</p>
+            <div class="project-tech">
+              <span>Em progresso...</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Contato</span>
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <p class="section-subtitle">
+          Estou aberto a novas oportunidades, colaborações e projetos interessantes. Entre em contato!
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>E-mail</h4>
+              <a href="mailto:victorkaue@email.com">victorkaue@email.com</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/VictorKaue" target="_blank">github.com/VictorKaue</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/victorkaue" target="_blank">linkedin.com/in/victorkaue</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Localização</h4>
+              <p>Brasil 🇧🇷</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span id="btn-text"><i class="fas fa-paper-plane"></i> Enviar Mensagem</span>
+            <span id="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none;">
+            <i class="fas fa-check-circle"></i> Mensagem enviada com sucesso! Em breve entrarei em contato.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <p>Feito com <i class="fas fa-heart" style="color:#f43f5e;"></i> por <strong>Victor Kauê</strong></p>
+      <div class="footer-social">
+        <a href="https://github.com/VictorKaue" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/victorkaue" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:victorkaue@email.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© 2025 Victor Kauê. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
