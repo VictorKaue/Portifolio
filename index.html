@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Victor Kauê — Engenheiro de Dados em formação com background em iOS." />
+  <meta name="description" content="Portfólio de Victor Kauê — Engenheiro de Dados com background em iOS." />
   <meta name="keywords" content="portfólio, engenharia de dados, python, sql, swift, victor kauê" />
   <meta name="author" content="Victor Kauê" />
   <title>Victor Kauê | Portfólio</title>
@@ -45,7 +45,7 @@
         <span class="role-text" id="role-text"></span><span class="cursor-blink">|</span>
       </div>
       <p class="hero-desc">
-        Engenheiro de Dados em formação com background em desenvolvimento iOS, focado em criar soluções eficientes para processamento de dados e IA.
+        Engenheiro de Dados com background em desenvolvimento iOS, focado em criar soluções eficientes para processamento de dados e IA.
       </p>
       <div class="hero-cta">
         <a href="#portfolio" class="btn btn-primary">Ver Projetos</a>
@@ -55,6 +55,7 @@
         <a href="https://github.com/VictorKaue" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/victor-kauê-89234a322" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="mailto:victorkaue909@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/5561993957743" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
     <div class="scroll-indicator">
@@ -395,6 +396,13 @@
             </div>
           </div>
           <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/5561993957743" target="_blank">+55 (61) 99395-7743</a>
+            </div>
+          </div>
+          <div class="contact-card reveal">
             <div class="contact-icon"><i class="fab fa-github"></i></div>
             <div>
               <h4>GitHub</h4>
@@ -417,6 +425,34 @@
             </div>
           </div>
         </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+            <span class="form-error" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <span class="form-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <span id="btn-text"><i class="fas fa-paper-plane"></i> Enviar Mensagem</span>
+            <span id="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+          </button>
+          <div class="form-success" id="form-success" style="display:none;">
+            <i class="fas fa-check-circle"></i> Mensagem enviada com sucesso! Em breve entrarei em contato.
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -429,8 +465,9 @@
         <a href="https://github.com/VictorKaue" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/victor-kauê-89234a322" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="mailto:victorkaue909@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/5561993957743" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       </div>
-      <p class="footer-copy">© 2025 Victor Kauê. Todos os direitos reservados.</p>
+      <p class="footer-copy">© 2026 Victor Kauê. Todos os direitos reservados.</p>
     </div>
   </footer>
 

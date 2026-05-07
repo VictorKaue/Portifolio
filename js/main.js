@@ -29,7 +29,7 @@ function updateActiveNav() {
 }
 
 // ===== TYPEWRITER EFFECT =====
-const roles = ['Engenheiro de Dados em Formação', 'Desenvolvedor iOS', 'Entusiasta de Dados', 'Solucionador de Problemas'];
+const roles = ['Engenheiro de Dados', 'Desenvolvedor iOS', 'Entusiasta de Dados', 'Solucionador de Problemas'];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 const roleText = document.getElementById('role-text');
 
@@ -92,6 +92,50 @@ filterBtns.forEach(btn => {
   });
 });
 
+
+// ===== CONTACT FORM =====
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let valid = true;
+
+  // Clear errors
+  ['name', 'email', 'message'].forEach(field => {
+    document.getElementById(field).classList.remove('error');
+    document.getElementById(field + '-error').textContent = '';
+  });
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (!name) { setError('name', 'Nome é obrigatório.'); valid = false; }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setError('email', 'Insira um e-mail válido.'); valid = false; }
+  if (!message) { setError('message', 'Mensagem é obrigatória.'); valid = false; }
+
+  if (!valid) return;
+
+  // Simulate sending
+  const btnText = document.getElementById('btn-text');
+  const btnLoading = document.getElementById('btn-loading');
+  btnText.style.display = 'none';
+  btnLoading.style.display = 'flex';
+  document.getElementById('submit-btn').disabled = true;
+
+  setTimeout(() => {
+    btnText.style.display = 'flex';
+    btnLoading.style.display = 'none';
+    document.getElementById('submit-btn').disabled = false;
+    document.getElementById('form-success').style.display = 'flex';
+    form.reset();
+    setTimeout(() => document.getElementById('form-success').style.display = 'none', 5000);
+  }, 1800);
+});
+
+function setError(field, msg) {
+  document.getElementById(field).classList.add('error');
+  document.getElementById(field + '-error').textContent = msg;
+}
 
 // ===== BACK TO TOP =====
 const backToTop = document.getElementById('back-to-top');
