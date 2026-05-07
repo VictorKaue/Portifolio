@@ -14,20 +14,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+  <!-- =============================================
+       BARRA DE NAVEGAÇÃO FIXA (menu principal)
+       Links de âncora para cada seção da página
+  ============================================= -->
   <header id="navbar">
     <nav class="nav-container">
       <a href="#hero" class="nav-logo">VK<span class="dot">.</span></a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#sobre" class="nav-link">Sobre</a></li>
-        <li><a href="#formacao" class="nav-link">Formação</a></li>
-        <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
-        <li><a href="#contato" class="nav-link">Contato</a></li>
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#formacao" class="nav-link">Formação</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </nav>
   </header>
+  <!-- =============================================
+       SEÇÃO HERO — Apresentação inicial com
+       animação de typewriter e links sociais
+  ============================================= -->
   <section id="hero">
     <div class="hero-bg">
       <div class="blob blob-1"></div>
@@ -59,6 +72,10 @@
       <span>Role para baixo</span>
     </div>
   </section>
+  <!-- =============================================
+       SEÇÃO SOBRE MIM — Foto, apresentação,
+       hobbies e habilidades técnicas
+  ============================================= -->
   <section id="sobre" class="section">
     <div class="container">
       <div class="section-header">
@@ -86,6 +103,18 @@
           <p>
             Atualmente, busco aprofundar meus conhecimentos em infraestrutura de dados (ETL/ELT, OLAP/OLTP) enquanto continuo aplicando boas práticas e criando soluções reais e eficientes.
           </p>
+          <!-- Hobbies e interesses pessoais -->
+          <div class="hobbies-wrap">
+            <h4>Interesses &amp; Hobbies</h4>
+            <div class="hobbies-grid">
+              <span class="hobby-item"><i class="fas fa-music"></i> Música</span>
+              <span class="hobby-item"><i class="fas fa-gamepad"></i> Games</span>
+              <span class="hobby-item"><i class="fas fa-book"></i> Leitura</span>
+              <span class="hobby-item"><i class="fas fa-film"></i> Cinema</span>
+              <span class="hobby-item"><i class="fas fa-dumbbell"></i> Musculação</span>
+              <span class="hobby-item"><i class="fas fa-code"></i> Open Source</span>
+            </div>
+          </div>
           <div class="skills-wrap">
             <h4>Engenharia de Dados & Programação</h4>
             <div class="skills-grid">
@@ -114,6 +143,10 @@
       </div>
     </div>
   </section>
+  <!-- =============================================
+       SEÇÃO FORMAÇÃO — Educação, experiência
+       e cursos com navegação por abas (tabs)
+  ============================================= -->
   <section id="formacao" class="section section-alt has-blobs">
     <div class="container">
       <div class="section-header">
@@ -225,6 +258,10 @@
       </div>
     </div>
   </section>
+  <!-- =============================================
+       SEÇÃO PORTFÓLIO — Projetos reais com
+       filtros por categoria e links externos
+  ============================================= -->
   <section id="portfolio" class="section">
     <div class="container">
       <div class="section-header">
@@ -326,6 +363,10 @@
       </div>
     </div>
   </section>
+  <!-- =============================================
+       SEÇÃO CONTATO — Formulário com validação
+       JavaScript e simulação de envio
+  ============================================= -->
   <section id="contato" class="section section-alt has-blobs">
     <div class="container">
       <div class="section-header">

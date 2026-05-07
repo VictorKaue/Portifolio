@@ -1,3 +1,34 @@
+// ================================================
+// PORTFÓLIO — Victor Kauê | main.js
+// JavaScript Vanilla (sem frameworks)
+// Funcionalidades: tema, navbar, typewriter,
+// scroll reveal, tabs, filtros, formulário
+// ================================================
+
+// ── Tema Claro/Escuro ─────────────────────────────────────────
+// Lê preferência salva no localStorage (padrão: dark)
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon   = document.getElementById('theme-icon');
+const savedTheme  = localStorage.getItem('theme') || 'dark';
+document.documentElement.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
+themeToggle.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  updateThemeIcon(next);
+});
+function updateThemeIcon(theme) {
+  themeIcon.style.transform = 'scale(0) rotate(90deg)';
+  themeIcon.style.opacity   = '0';
+  setTimeout(() => {
+    themeIcon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+    themeIcon.style.transform = 'scale(1) rotate(0deg)';
+    themeIcon.style.opacity   = '1';
+  }, 200);
+}
+// ── Navbar scroll ─────────────────────────────────────────────
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
@@ -22,6 +53,7 @@ function updateActiveNav() {
     link.classList.toggle('active', link.getAttribute('href') === '#' + current);
   });
 }
+// ── Typewriter — anima o texto de roles no hero ───────────────
 const roles = ['Engenheiro de Dados', 'Desenvolvedor iOS', 'Entusiasta de Dados', 'Solucionador de Problemas'];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 const roleText = document.getElementById('role-text');
@@ -37,6 +69,7 @@ function type() {
   setTimeout(type, isDeleting ? 60 : 100);
 }
 setTimeout(type, 800);
+// ── Scroll Reveal — anima elementos ao entrar na tela ─────────
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
@@ -47,6 +80,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 reveals.forEach(el => observer.observe(el));
+// ── Tabs — alterna abas na seção Formação ─────────────────────
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const tab = btn.dataset.tab;
@@ -61,6 +95,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     });
   });
 });
+// ── Filtro de Projetos — mostra/oculta cards por categoria ────
 const filterBtns = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 filterBtns.forEach(btn => {
@@ -75,6 +110,9 @@ filterBtns.forEach(btn => {
     });
   });
 });
+// ── Formulário de Contato ─────────────────────────────────────
+// Valida nome, e-mail (regex) e mensagem antes de enviar
+// Simula o envio com setTimeout e exibe mensagem de sucesso
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
